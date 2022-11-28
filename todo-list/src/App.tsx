@@ -1,12 +1,10 @@
-import { useState } from 'react'
-import './App.css'
-import './global.css'
+import { useState } from 'react' 
+import { Header } from './components/Header'
+import './global.scss'
 
 export function App() {
 
   return (
-    <div>
-      Todo List
-    </div>
+    <Header />
   )
 }
