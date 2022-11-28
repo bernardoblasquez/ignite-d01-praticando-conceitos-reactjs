@@ -1,1 +1,49 @@
 
+:root{
+   --gray_100: #F2F2F2;
+   --gray_200: #D9D9D9;
+   --gray_300: #808080;
+   --gray_400: #333333;
+   --gray_500: #262626;
+   --gray_600: #1A1A1A;
+   --gray_700: #0D0D0D;
+   --purple: #8284FA;
+   --purple_dark: #5E60CE;
+   --blue: #4EA8DE;
+   --blue_dark: #1E6F9F;
+   --danger: #E25858;
+}
+
+*{
+   padding: 0; 
+   margin: 0;
+   box-sizing: border-box;
+}
+
+:focus{
+   outline: transparent;
+   box-shadow: 0 0 0 2px var(--green-500);
+}
+
+body{
+   background-color:var(--gray_600);
+   color: var(--gray_300);
+   -webkit-font-smoothing: antialiased;
+}
+
+
+body, input, textarea, button{
+   font-family: 'Inter', sans-serif;
+   font-weight: 400;
+   font-size: 1rem;
+   line-height: 140%;
+}
+/*
+   tamanho padrão da font do navegador: 16px = 1rem;
+   usar rem para tamanhos de botões espaçmentos...
+   permite que au aumenta o tamando da font da body
+   todo o resto seja aumentado proporcionalmente. 
+
+   Préconnect da font importada vem primrito
+
+*/
