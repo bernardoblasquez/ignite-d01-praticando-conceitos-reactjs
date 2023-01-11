@@ -1,0 +1,19 @@
+.empty-list{
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content:center;
+   align-items: center;
+
+   margin: 0 auto;
+   width: 736px;
+
+   margin-top: 1.5rem;
+   padding-top: 4rem;
+   border-top: 1px solid var(--gray_400);
+   border-radius: 8px;
+   
+
+   img{
+      margin-bottom: 1rem;
+   }
+}
