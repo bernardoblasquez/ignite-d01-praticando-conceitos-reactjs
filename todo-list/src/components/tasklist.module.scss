@@ -1,53 +1,35 @@
 .task-list{
+   display: flex;
+   flex-flow: column wrap;
+   gap: 0.75rem;
+
    width: 736px;
    margin: 0 auto;
+   padding-top: 1.5rem; 
+}
 
-   padding-top: 5rem; 
+.task-item {
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   gap: 0.75rem;
+   align-items: flex-start;
+
+
+   padding: 1rem;
+   background-color: var(--gray_500);
+   border:1px solid var(--gray_400);
+   border-radius: 8px;
+
+   p{
+      padding: 0;
+      color: var(--gray_100);
+   }
+
+   .checked-text{
+      text-decoration: line-through;
+      color: var(--gray_300);
+   }
+
    
-   &__indicators{
-      display: flex; 
-      flex-flow: row nowrap;
-      justify-content: space-between;
-      gap: 0.5rem;
-   }
-
-   &__indicator{ 
-      display: flex;
-      gap: 0.25rem;
-   }
-
-   &__indicator-label{
-      display: inline-block;
-      padding: 2px 8px 2px 0 ;
-      font-weight: 700;
-      color: var(--blue);
-   }
-
-   &__indicator-number{
-      display: inline-block;
-      background-color: var(--gray_400);
-      color: var(--gray_200);
-      font-weight: 700;
-      padding: 2px 0;
-      width: 40px;
-      border-radius: 2rem;
-      text-align: center;
-   }
-
-   &__empty-list{
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content:center;
-      align-items: center;
-
-      margin-top: 1.5rem;
-      padding-top: 4rem;
-      border-top: 1px solid var(--gray_400);
-      border-radius: 8px;
-      
-
-      img{
-         margin-bottom: 1rem;
-      }
-   }
 }
